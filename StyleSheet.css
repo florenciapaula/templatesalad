@@ -2,414 +2,405 @@
 
 /* ESTILO UNIVERSAL */
 
-*{
-    font-family: 'Roboto', sans-serif;
-    font-weight: bold;
+* {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
 }
 
 /* DISPLAY SIZE - PUNTOS DE CORTE */
 
-@media (max-width: 1800px){
+@media (max-width: 1800px) {
+  body {
+    display: grid;
+    grid-template-columns: 100%;
+  }
 
-            body{
-                display:grid;
-                grid-template-columns: 100%;    
-            }
+  section {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
 
-            section{
-                display:grid;
-                grid-template-columns: 50% 50%;
-                align-items: center;
-                padding-top: 1rem;
-                padding-bottom: 1rem;
-            }
+  #sectioncatalogo {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  h2 {
+    font-size: 35px;
+  }
+  p {
+    padding: 1rem;
+    font-size: 28px;
+  }
 
-            #sectioncatalogo{
-                display:grid;
-                grid-template-columns: auto auto auto auto;
-                padding-top: 1rem;
-                padding-bottom: 1rem;
-            }
-            h2{
-                font-size: 35px;
-            }
-            p{
-                font-size: 28px;
-            }
+  /* ESTILOS POR CLASE */
 
-        /* ESTILOS POR CLASE */
+  header {
+    display: flex;
+    padding-left: 2%;
+    width: 100%;
+    background-color: #78e6d0;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  nav {
+    font-size: 25px;
+    width: 100%;
+    text-align: right;
+    padding-right: 5%;
+    /* background-color: #FAF1C0; */
+    background-color: lemonchiffon;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
 
-        header{
-            display: flex;
-            padding-left: 2%;
-            width: 100%;
-            background-color: #78E6D0;
-            padding-top: 1rem;
-            padding-bottom: 1rem;
-        }
-        nav{
-            font-size: 25px;
-            width: 100%;
-            text-align: right;
-            padding-right:5%;
-            /* background-color: #FAF1C0; */
-            background-color: lemonchiffon;
-            padding-top: 1rem;
-            padding-bottom: 1rem;
-        }
+  article {
+    width: 100%;
+    height: auto;
+    text-align: center;
+  }
 
-        article{
-            width: 100%;
-            height: auto;   
-            text-align: center;     
-        }
+  footer {
+    text-align: center;
+    background-color: #78e6d0;
+  }
 
-        footer{
-            text-align: center;
-            background-color: #78E6D0;
-        }
+  a {
+    text-decoration: none;
+  }
 
-        a{
-            text-decoration: none;
-        }
+  img {
+    vertical-align: middle;
+    background-size: contain;
+    width: 100%;
+    height: auto;
+  }
 
-        img{
-            vertical-align: middle;
-            background-size: contain;
-            width: 100%;
-            height: auto;
-        }
+  /* ESTILOS POR ID */
 
-        /* ESTILOS POR ID */
+  #div1 {
+    display: flex;
+    justify-content: center;
+    align-content: flex-end;
+  }
+  #logohome {
+    height: 5rem;
+    width: auto;
+  }
+  #logofooter {
+    vertical-align: middle;
+    height: auto;
+    width: 3rem;
+  }
+  #logocontacto {
+    height: 1.5rem;
+    width: auto;
+  }
+  #logocontacto2 {
+    display: block;
+    margin: auto;
+    margin-top: 3rem;
+    height: 10rem;
+    width: auto;
+  }
+}
+@media (max-width: 1000px) {
+  body {
+    display: grid;
+    grid-template-columns: 100%;
+  }
 
-        #div1{
-            display:flex;
-            justify-content: center;
-            align-content:flex-end;
-        }
-        #logohome{
-            height: 5rem;
-            width: auto;
-        }
-        #logofooter{
-            vertical-align: middle;
-            height: auto;
-            width: 3rem;
-        }
-        #logocontacto{
-            height: 1.5rem;
-            width: auto;
-        }
-        #logocontacto2{
-            display:block;
-            margin:auto;
-            margin-top: 3rem;
-            height: 10rem;
-            width: auto;
-        }
+  section {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
 
-    }
-@media (max-width: 1000px){
-    
-                body{
-                    display:grid;
-                    grid-template-columns: 100%;    
-                }
+  #sectioncatalogo {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  h2 {
+    font-size: 35px;
+  }
+  p {
+    padding: 1rem;
+    font-size: 28px;
+  }
+}
 
-                section{
-                    display:grid;
-                    grid-template-columns: 50% 50%;
-                    align-items: center;
-                    padding-top: 1rem;
-                    padding-bottom: 1rem;
-                }
+/* ESTILOS POR CLASE */
 
-                #sectioncatalogo{
-                    display:grid;
-                    grid-template-columns: auto auto auto auto;
-                    padding-top: 1rem;
-                    padding-bottom: 1rem;
-                }
-                h2{
-                    font-size: 35px;
-                }
-                p{
-                    font-size: 28px;
-                }
-            }
+header {
+  display: flex;
+  padding-left: 2%;
+  width: 100%;
+  background-color: #78e6d0;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+nav {
+  font-size: 25px;
+  width: 100%;
+  text-align: right;
+  padding-right: 5%;
+  /* background-color: #FAF1C0; */
+  background-color: lemonchiffon;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
 
-            /* ESTILOS POR CLASE */
+article {
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
 
+footer {
+  text-align: center;
+  background-color: #78e6d0;
+}
 
-            header{
-                display: flex;
-                padding-left: 2%;
-                width: 100%;
-                background-color: #78E6D0;
-                padding-top: 1rem;
-                padding-bottom: 1rem;
-            }
-            nav{
-                font-size: 25px;
-                width: 100%;
-                text-align: right;
-                padding-right:5%;
-                /* background-color: #FAF1C0; */
-                background-color: lemonchiffon;
-                padding-top: 1rem;
-                padding-bottom: 1rem;
-            }
+a {
+  text-decoration: none;
+}
 
-            article{
-                width: 100%;
-                height: auto;   
-                text-align: center;     
-            }
+img {
+  vertical-align: middle;
+  background-size: contain;
+  width: 100%;
+  height: auto;
+}
 
-            footer{
-                text-align: center;
-                background-color: #78E6D0;
-            }
+/* ESTILOS POR ID */
 
-            a{
-                text-decoration: none;
-            }
+#div1 {
+  display: flex;
+  justify-content: center;
+  align-content: flex-end;
+}
+#logohome {
+  height: 5rem;
+  width: auto;
+}
+#logofooter {
+  vertical-align: middle;
+  height: auto;
+  width: 3rem;
+}
+#logocontacto {
+  height: 1.5rem;
+  width: auto;
+}
+#logocontacto2 {
+  display: block;
+  margin: auto;
+  margin-top: 3rem;
+  height: 10rem;
+  width: auto;
+}
 
-            img{
-                vertical-align: middle;
-                background-size: contain;
-                width: 100%;
-                height: auto;
-            }
+@media (max-width: 850px) {
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+  section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
 
-            /* ESTILOS POR ID */
+  #sectioncatalogo {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  h2 {
+    font-size: 25px;
+  }
+  p {
+    padding: 1rem;
+    font-size: 20px;
+  }
+}
 
-            #div1{
-                display:flex;
-                justify-content: center;
-                align-content:flex-end;
-            }
-            #logohome{
-                height: 5rem;
-                width: auto;
-            }
-            #logofooter{
-                vertical-align: middle;
-                height: auto;
-                width: 3rem;
-            }
-            #logocontacto{
-                height: 1.5rem;
-                width: auto;
-            }
-            #logocontacto2{
-                display:block;
-                margin:auto;
-                margin-top: 3rem;
-                height: 10rem;
-                width: auto;
-            }
+/* ESTILOS POR CLASE */
 
-@media (max-width: 850px){
+header {
+  display: flex;
+  padding-left: 2%;
+  width: 100%;
+  background-color: #78e6d0;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+nav {
+  font-size: 25px;
+  width: 100%;
+  text-align: right;
+  padding-right: 5%;
+  /* background-color: #FAF1C0; */
+  background-color: lemonchiffon;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
 
-                body{
-                    display: flex;
-                    flex-direction: column;        
-                }
+article {
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
 
-                section{
-                    display:grid;
-                    grid-template-columns: 50% 50%;
-                    align-items: center;
-                    padding-top: 1rem;
-                    padding-bottom: 1rem;
-                }
-                #sectioncatalogo{
-                    display:grid;
-                    grid-template-columns: auto auto auto;
-                    padding-top: 1rem;
-                    padding-bottom: 1rem;
-                }
-                h2{
-                    font-size: 25px;
-                }
-                p{
-                    font-size: 20px;
-                }
+footer {
+  text-align: center;
+  background-color: #78e6d0;
+}
 
-            }
+a {
+  text-decoration: none;
+}
 
-            /* ESTILOS POR CLASE */
+img {
+  vertical-align: middle;
+  background-size: contain;
+  width: 100%;
+  height: auto;
+}
 
+/* ESTILOS POR ID */
 
-            header{
-                display: flex;
-                padding-left: 2%;
-                width: 100%;
-                background-color: #78E6D0;
-                padding-top: 1rem;
-                padding-bottom: 1rem;
-            }
-            nav{
-                font-size: 25px;
-                width: 100%;
-                text-align: right;
-                padding-right:5%;
-                /* background-color: #FAF1C0; */
-                background-color: lemonchiffon;
-                padding-top: 1rem;
-                padding-bottom: 1rem;
-            }
+#div1 {
+  display: flex;
+  justify-content: center;
+  align-content: flex-end;
+}
+#logohome {
+  height: 5rem;
+  width: auto;
+}
+#logofooter {
+  vertical-align: middle;
+  height: auto;
+  width: 3rem;
+}
+#logocontacto {
+  height: 1.5rem;
+  width: auto;
+}
+#logocontacto2 {
+  display: block;
+  margin: auto;
+  margin-top: 3rem;
+  height: 10rem;
+  width: auto;
+}
 
-            article{
-                width: 100%;
-                height: auto;   
-                text-align: center;     
-            }
+@media (max-width: 500px) {
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+  section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
 
-            footer{
-                text-align: center;
-                background-color: #78E6D0;
-            }
+  #sectioncatalogo {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  h2 {
+    font-size: 25px;
+  }
+  p {
+    padding: 1rem;
+    font-size: 20px;
+  }
+}
+/* ESTILOS POR CLASE */
 
-            a{
-                text-decoration: none;
-            }
+header {
+  display: flex;
+  padding-left: 2%;
+  width: 100%;
+  background-color: #78e6d0;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+nav {
+  font-size: 25px;
+  width: 100%;
+  text-align: right;
+  padding-right: 5%;
+  /* background-color: #FAF1C0; */
+  background-color: lemonchiffon;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
 
-            img{
-                vertical-align: middle;
-                background-size: contain;
-                width: 100%;
-                height: auto;
-            }
+article {
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
 
-            /* ESTILOS POR ID */
+footer {
+  text-align: center;
+  background-color: #78e6d0;
+}
 
-            #div1{
-                display:flex;
-                justify-content: center;
-                align-content:flex-end;
-            }
-            #logohome{
-                height: 5rem;
-                width: auto;
-            }
-            #logofooter{
-                vertical-align: middle;
-                height: auto;
-                width: 3rem;
-            }
-            #logocontacto{
-                height: 1.5rem;
-                width: auto;
-            }
-            #logocontacto2{
-                display:block;
-                margin:auto;
-                margin-top: 3rem;
-                height: 10rem;
-                width: auto;
-            }
+a {
+  text-decoration: none;
+}
 
-@media (max-width: 500px){
+img {
+  vertical-align: middle;
+  background-size: contain;
+  width: 100%;
+  height: auto;
+}
 
-                body{
-                    display: flex;
-                    flex-direction: column;        
-                }
-                section{
-                    display: flex;
-                    flex-direction: column; 
-                    align-items: center;
-                    padding-top: 1rem;
-                    padding-bottom: 1rem;
-                }
+/* ESTILOS POR ID */
 
-                #sectioncatalogo{
-                    display:grid;
-                    grid-template-columns: auto auto;
-                    padding-top: 1rem;
-                    padding-bottom: 1rem;
-                }
-                h2{
-                    font-size: 25px;
-                }
-                p{
-                    font-size: 20px;
-                }
-
-            }
-            /* ESTILOS POR CLASE */
-
-
-            header{
-                display: flex;
-                padding-left: 2%;
-                width: 100%;
-                background-color: #78E6D0;
-                padding-top: 1rem;
-                padding-bottom: 1rem;
-            }
-            nav{
-                font-size: 25px;
-                width: 100%;
-                text-align: right;
-                padding-right:5%;
-                /* background-color: #FAF1C0; */
-                background-color: lemonchiffon;
-                padding-top: 1rem;
-                padding-bottom: 1rem;
-            }
-
-            article{
-                width: 100%;
-                height: auto;   
-                text-align: center;     
-            }
-
-            footer{
-                text-align: center;
-                background-color: #78E6D0;
-            }
-
-            a{
-                text-decoration: none;
-            }
-
-            img{
-                vertical-align: middle;
-                background-size: contain;
-                width: 100%;
-                height: auto;
-            }
-
-            /* ESTILOS POR ID */
-
-            #div1{
-                display:flex;
-                justify-content: center;
-                align-content:flex-end;
-            }
-            #logohome{
-                height: 5rem;
-                width: auto;
-            }
-            #logofooter{
-                vertical-align: middle;
-                height: auto;
-                width: 3rem;
-            }
-            #logocontacto{
-                height: 1.5rem;
-                width: auto;
-            }
-            #logocontacto2{
-                display:block;
-                margin:auto;
-                margin-top: 3rem;
-                height: 10rem;
-                width: auto;
-            }
-
-
-
+#div1 {
+  display: flex;
+  justify-content: center;
+  align-content: flex-end;
+}
+#logohome {
+  height: 5rem;
+  width: auto;
+}
+#logofooter {
+  vertical-align: middle;
+  height: auto;
+  width: 3rem;
+}
+#logocontacto {
+  height: 1.5rem;
+  width: auto;
+}
+#logocontacto2 {
+  display: block;
+  margin: auto;
+  margin-top: 3rem;
+  height: 10rem;
+  width: auto;
+}
